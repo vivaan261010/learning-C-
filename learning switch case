@@ -1,0 +1,50 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    cout<<"Here it the calendar please enter a number between 1 to 7 inclusive"<<endl;
+    int day_number;
+    cin>>day_number;  // 1-> monday 2->tuesda 3-> wednesday ..... 7->sunday and then a default
+
+    switch (day_number)  //switch(1)
+    {
+    case 1:
+        //Code:
+        cout<<"The day is Monday!"<<endl;
+        break;
+    case 2:
+        cout<<"The day is Tueday!"<<endl;
+        break;
+    case 3:
+        cout<<"the day is wednesday!"<<endl;
+        break;
+    case 4:
+        cout<<"the day is thusrday!"<<endl;
+        break;
+    case 5:
+        cout<<"the day is friday!"<<endl;
+        break;
+    case 6:
+        cout<<"the day is saturday!"<<endl;
+        break;
+    case 7:
+        cout<<"the day is sunday!"<<endl;
+        break;
+    default:
+        cout<<"The number is invalid"<<endl;
+        break;
+    }
+
+    return 0;
+}
+    
