@@ -1,0 +1,65 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int
+main ()
+{
+  //Calculator App
+  //Declare two containers
+  int container_1;
+  int container_2;
+
+  //Take the input from the user
+  cout << "Enter two number" << endl;
+  cin >> container_1;
+  cin >> container_2;
+
+  //Menu for your calculator
+  cout <<
+    "Enter your choice  1.Addition  2.Subtraction  3.Division  4.Multiplication"
+    << endl;
+  int choice;
+  cin >> choice;
+
+  //Implement your logic here. Hint: use switch case
+  switch (choice)
+    {
+      //Addition
+    case 1:
+      {
+	int sum = container_1 + container_2;
+	cout << "The addition of two numbers is " << sum << endl;
+      } break;
+      //Subtraction
+    case 2:
+      {
+	int minus = container_1 - container_2;
+	cout << "The Subtraction of  two numbers is" << minus << endl;
+      } break;
+      //Division
+    case 3:
+      {
+	int Divide = container_1 / container_2;
+	cout << "The division of two numbers" << Divide << endl;
+      } break;
+      //Multiplication
+    case 4:
+      {
+	int Multiplication = container_1 * container_2;
+	cout << "the multiplication of two numbers" << Multiplication << endl;
+      } break;
+      //Default
+    default:
+      cout << "the sign is innvalid" << endl;
+      break;
+    }
+  return 0;
+}
