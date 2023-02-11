@@ -1,0 +1,22 @@
+// program 3 - program to calculate sum of first n nateral numbers 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int number;
+    cout<<"enter an integer value"<<endl;
+    cin>>number;
+    int sum=0;
+    
+    for(int counter=0;counter<=number;counter=counter+1)
+    {
+        sum=sum+counter;
+        
+    }
+    cout<<sum<<endl;
+    return 0;
+}
+    
