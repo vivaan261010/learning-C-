@@ -14,9 +14,9 @@ int main()
     for(int counter=0;counter<=number;counter=counter+1)
     {
         sum=sum+counter;
+        cout<<"the value of sum at counter "<<counter<<"is "<<sum<<endl;
         
     }
     cout<<sum<<endl;
     return 0;
-}
-    
+}    
