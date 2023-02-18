@@ -1,0 +1,33 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+// program 3 - program to calculate sum of first n nateral numbers 
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int number;
+    cout<<"enter an integer value"<<endl;
+    cin>>number;
+    int sum=0;
+    
+   int counter=0;
+   while(counter<=number)
+    {
+        sum=sum+counter;
+        cout<<"the value of sum at counter "<<counter<<"is "<<sum<<endl;
+        counter=counter+1;
+        
+        
+    }
+    cout<<sum<<endl;
+    return 0;
+}
