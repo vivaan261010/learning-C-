@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    float amount, converted_amount;
+    int choice;
+
+    cout << "Enter the amount in INR: ";
+    //Take input for the amount entered
+    cin  >> amount;
+    
+    cout << "Select the currency to convert: " << endl;
+    cout << "1. US Dollar (USD)" << endl;
+    cout << "2. Euro (EUR)" << endl;
+    cout << "3. British Pound (GBP)" << endl;
+    cout << "4. Japanese Yen (JPY)" << endl;
+    cout << "5. Swiss Franc (CHF)" << endl;
+    cout << "Enter your choice: ";
+    //Take input for choice
+    cin >> choice;
+    switch(choice)
+    {
+        case 1:
+        converted_amount=amount/81.66;
+        cout <<  "Converted amount: " << converted_amount << " USD" << endl;
+        break;
+        case 2:
+        converted_amount=amount/86.845;
+        cout << "converted_amount: "<< converted_amount <<  " EUR" << endl;
+        break;
+        case 3:
+        converted_amount=amount/98.688;
+        cout << "converted_amount: "<< converted_amount <<  " GBP" << endl;
+        break;
+        case 4:
+        converted_amount=amount/0.601;
+        cout << "converted_amount: "<< converted_amount <<  " JPY" << endl;
+        break;
+        case 5:
+        converted_amount=amount/87.221;
+        cout << "converted_amount: "<< converted_amount <<  "CHF " << endl;
+        break;
+        default:
+        cout<< " the case is invalid " <<endl;
+    }    
+    
+    
+return 0;
+}
